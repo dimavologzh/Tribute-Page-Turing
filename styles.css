@@ -1,0 +1,116 @@
+@media (prefers-reduced-motion: no-preference) {
+  * {
+    scroll-behavior: smooth;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: Raleway, Helvetica;
+  background-color: #000f27;
+  color: #ffffff;
+}
+
+#navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 50px;
+  background-color: rgba(0,15,39,0.7);
+}
+
+#navbar ul {
+  display: flex;
+  justify-content:space-evenly;
+  flex-wrap: wrap;
+  align-items: center;
+  padding-inline-start: 0;
+  margin-block: 0;
+  height: 100%;
+  list-style: none;
+  max-width: 300px;
+  margin: auto;
+}
+
+#navbar > ul > li {
+  margin: 0 0.2rem;
+  padding: 0.2rem;
+  display: block;
+}
+
+a:hover {
+  color: #dddddd;
+  cursor: pointer;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+main {
+  margin: 50px auto auto auto;
+  width: 90%;
+  max-width: 700px;
+}
+
+hr {
+  margin: 1.5rem 0;
+  border: 1px solid rgba(120, 120, 120, 0.6);
+}
+
+#welcome-section {
+  text-align: center;
+  max-width: 400px;
+  margin: auto;
+  height: 100vw;
+}
+
+#resume-button {
+  color: #ffffff;
+  font-weight: bold;
+  font-family: inherit;
+  background-color: inherit;
+  display: block;
+  width: ;
+  margin: 1em auto;
+  height: 2em;
+  font-size: 1.1rem;
+  border: 0.5px solid #ffffff;
+  min-width: 150px;
+}
+
+#resume-button:hover {
+  background-color: #ffffff;
+  color: #000f27;
+  cursor: pointer;
+}
+
+#projects {
+  display: grid;
+  grid-template-columns: minmax(auto, 1fr) minmax(min-content, 1fr) minmax(auto, 1fr);
+  row-gap: 3rem;
+  max-width: 600px;
+  margin: auto;
+  text-align: center;
+}
+
+.project-tile:hover {
+  background-color: rgba(100,100,100,0.5);
+}
+
+footer {
+  display: flex;
+  justify-content:space-evenly;
+  flex-wrap: wrap;
+  font-size: 0.8rem;
+}
+
+@media only screen and (max-width: 600px) {
+  #projects {
+    grid-template-columns: 1fr;
+  }
+}
